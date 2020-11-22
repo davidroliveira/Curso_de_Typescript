@@ -1,2 +1,7 @@
+npm --version
+npm install -g typescript
+tsc --version
+
+
 tsc -w
 live-server
