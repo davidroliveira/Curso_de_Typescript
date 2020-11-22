@@ -14,5 +14,4 @@ function addNums(num1: any, num2: number){
 }
 
 console.log(addNumTyped(10,20));
-
 console.log(addNums('10',20));
