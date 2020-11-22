@@ -8,7 +8,7 @@ function Soma(nota1: number, nota2: number, nota3: number, nota4: number) {
 
 let notasBimestre1 = [7, 10, 9, 8];
 
-console.log('Soma das notas do Bimestre: ' + Soma(...notasBimestre1));
+//console.log('Soma das notas do Bimestre: ' + Soma(...notasBimestre1)); Pau!!!!
 console.log(...notasBimestre1);
 
 let notasBimestre2 = [6, 8, 7, 9];
