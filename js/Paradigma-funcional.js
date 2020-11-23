@@ -14,4 +14,4 @@ function addNums(num1, num2) {
 }
 console.log(addNumTyped(10, 20));
 console.log(addNums('10', 20));
-//# sourceMappingURL=Paradigima-funcional.js.map
+//# sourceMappingURL=Paradigma-funcional.js.map
