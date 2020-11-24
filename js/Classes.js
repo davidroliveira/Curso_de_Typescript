@@ -17,4 +17,71 @@ button.onclick = function () {
 };
 document.body.appendChild(button);
 //console.log('david2');
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+var Bimestre = /** @class */ (function () {
+    function Bimestre(nota1, nota2, nota3, nota4) {
+        this.nota1 = nota1;
+        this.nota2 = nota2;
+        this.nota3 = nota3;
+        this.nota4 = nota4;
+        this._notaA = nota1;
+    }
+    ///////////get e set estilo JAVA
+    Bimestre.prototype.getNotaA = function () {
+        return this._notaA;
+    };
+    Bimestre.prototype.setNotaA = function (notaA) {
+        this._notaA = notaA;
+    };
+    Object.defineProperty(Bimestre.prototype, "NotaA", {
+        ///////////////////////////////
+        ///////////get e set estilo C#
+        get: function () {
+            return this._notaA;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Bimestre.prototype, "notaA", {
+        set: function (notaA) {
+            this._notaA = notaA;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    ///////////////////////////////
+    Bimestre.prototype.soma = function (nota1, nota2, nota3, nota4) {
+        return nota1 + nota2 + nota3 + nota4;
+    };
+    return Bimestre;
+}());
+var notasBimatre1 = [7, 10, 9, 8];
+//let bimestre = new Bimestre(...notasBimatre1); //Não deu certo
+var bimestre = new Bimestre(notasBimatre1[0], notasBimatre1[1], notasBimatre1[2], notasBimatre1[3]);
+console.log('1ª nota: ' + bimestre.nota1);
+//console.log('Soma das notas do Bimestre 1: ' + bimestre.soma(...notasBimatre1)); //Não deu certo
+console.log('Soma das notas do Bimestre 1: ' + bimestre.soma(notasBimatre1[0], notasBimatre1[1], notasBimatre1[2], notasBimatre1[3]));
+console.log('nota A: ' + bimestre.getNotaA());
+var Minhoca = /** @class */ (function () {
+    function Minhoca() {
+    }
+    Minhoca.prototype.mover = function (distancia) {
+        console.log('Minhoca rasteja ' + distancia + ' metros');
+    };
+    return Minhoca;
+}());
+var Cavalo = /** @class */ (function () {
+    function Cavalo() {
+    }
+    Cavalo.prototype.mover = function (distancia) {
+        console.log('Cavalo rasteja ' + distancia + ' metros');
+    };
+    return Cavalo;
+}());
+var cavalo = new Cavalo();
+cavalo.mover(4);
+var animal = new Cavalo();
+animal.mover(5);
+animal = new Minhoca();
+animal.mover(3);
 //# sourceMappingURL=Classes.js.map
