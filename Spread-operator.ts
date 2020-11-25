@@ -1,3 +1,5 @@
+console.clear();
+
 //Não funcionou
 //Talves se alterar cfg do tsconfig.json pra funcionar???
 //"downlevelIteration": true, 

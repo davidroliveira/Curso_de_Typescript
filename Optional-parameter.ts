@@ -1,3 +1,5 @@
+console.clear();
+
 function add(num1: number, num2: number, num3?: number): number{
     console.log('num3 é ' + num3);
 

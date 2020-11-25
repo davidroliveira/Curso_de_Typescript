@@ -1,4 +1,5 @@
 "use strict";
+console.clear();
 var Greeter2 = /** @class */ (function () {
     function Greeter2(message) {
         this.greeting = message;

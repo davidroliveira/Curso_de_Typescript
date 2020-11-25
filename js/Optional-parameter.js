@@ -1,4 +1,5 @@
 "use strict";
+console.clear();
 function add(num1, num2, num3) {
     console.log('num3 é ' + num3);
     if (typeof (num3) == "undefined") {

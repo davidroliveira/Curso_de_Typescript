@@ -1,3 +1,5 @@
+console.clear();
+
 class Animal {
     constructor(public name: string) {
 

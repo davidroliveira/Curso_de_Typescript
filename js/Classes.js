@@ -1,4 +1,5 @@
 "use strict";
+console.clear();
 var Greeter = /** @class */ (function () {
     function Greeter(message) {
         this.greeting = message;
@@ -62,26 +63,4 @@ console.log('1ª nota: ' + bimestre.nota1);
 //console.log('Soma das notas do Bimestre 1: ' + bimestre.soma(...notasBimatre1)); //Não deu certo
 console.log('Soma das notas do Bimestre 1: ' + bimestre.soma(notasBimatre1[0], notasBimatre1[1], notasBimatre1[2], notasBimatre1[3]));
 console.log('nota A: ' + bimestre.getNotaA());
-var Minhoca = /** @class */ (function () {
-    function Minhoca() {
-    }
-    Minhoca.prototype.mover = function (distancia) {
-        console.log('Minhoca rasteja ' + distancia + ' metros');
-    };
-    return Minhoca;
-}());
-var Cavalo = /** @class */ (function () {
-    function Cavalo() {
-    }
-    Cavalo.prototype.mover = function (distancia) {
-        console.log('Cavalo rasteja ' + distancia + ' metros');
-    };
-    return Cavalo;
-}());
-var cavalo = new Cavalo();
-cavalo.mover(4);
-var animal = new Cavalo();
-animal.mover(5);
-animal = new Minhoca();
-animal.mover(3);
 //# sourceMappingURL=Classes.js.map

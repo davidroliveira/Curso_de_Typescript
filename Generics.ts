@@ -1,3 +1,5 @@
+console.clear();
+
 class Greeter2<T> {
     greeting: T;
     constructor(message: T) {

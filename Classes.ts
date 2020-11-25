@@ -1,3 +1,5 @@
+console.clear();
+
 class Greeter {
     greeting: string;
     constructor(message: string) {
@@ -63,28 +65,3 @@ console.log('Soma das notas do Bimestre 1: ' + bimestre.soma(notasBimatre1[0], n
 
 
 console.log('nota A: ' + bimestre.getNotaA());
-/////////////////////////////////////////////////////////////
-interface Animal2 {
-    mover(distancia: number): void;
-}
-
-class Minhoca implements Animal2 {
-    mover (distancia: number) {
-        console.log('Minhoca rasteja ' + distancia + ' metros');
-    }
-}
-
-class Cavalo implements Animal2 {
-    mover (distancia: number) {
-        console.log('Cavalo rasteja ' + distancia + ' metros');
-    }
-}
-
-let cavalo: Cavalo = new Cavalo();
-cavalo.mover(4);
-
-let animal: Animal2 = new Cavalo();
-animal.mover(5);
-
-animal = new Minhoca();
-animal.mover(3);

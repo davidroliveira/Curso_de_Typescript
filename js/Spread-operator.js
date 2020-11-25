@@ -1,7 +1,4 @@
 "use strict";
-//Não funcionou
-//Talves se alterar cfg do tsconfig.json pra funcionar???
-//"downlevelIteration": true, 
 var __assign = (this && this.__assign) || function () {
     __assign = Object.assign || function(t) {
         for (var s, i = 1, n = arguments.length; i < n; i++) {
@@ -13,6 +10,10 @@ var __assign = (this && this.__assign) || function () {
     };
     return __assign.apply(this, arguments);
 };
+console.clear();
+//Não funcionou
+//Talves se alterar cfg do tsconfig.json pra funcionar???
+//"downlevelIteration": true, 
 function Soma(nota1, nota2, nota3, nota4) {
     return nota1 + nota2 + nota3 + nota4;
 }

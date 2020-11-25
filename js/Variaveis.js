@@ -1,4 +1,5 @@
 "use strict";
+console.clear();
 //var -> var respeita escopo (NÃO É RECOMENDÁVEL!!!)
 var nome = 'Clayton';
 console.log(nome);
